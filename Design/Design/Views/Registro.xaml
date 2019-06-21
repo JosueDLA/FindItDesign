@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Design.Views.Registro"
+             Title="Registrarse">
+    <ContentPage.Content>
+        <Grid>
+            <Image x:Name="imgWallpaper" />
+            <BoxView Color="#3b5998" Opacity="0.7" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="imgLogo" Grid.Row="0"/>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Entry x:Name="txtUsuario" Placeholder="Correo" Keyboard="Text" TextColor="White" />
+                    <Entry x:Name="txtPassword1" Placeholder="Contraseña" IsPassword="true" TextColor="White" />
+                    <Entry x:Name="txtPassword2" Placeholder="Confirmar Contraseña" IsPassword="true" TextColor="White" />
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="btnIngresar" Text="Crear" BackgroundColor="#3b5998" BorderRadius="20" TextColor="White" WidthRequest="180" HorizontalOptions="StartAndExpand"  />
+                        <Button x:Name="btnCancelar" Text="Cancelar" BackgroundColor="#3b5998" BorderRadius="20" TextColor="White" WidthRequest="180" HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

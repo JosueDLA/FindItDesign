@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Design.Views.EntidadesOferta"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Image x:Name="imgWallpaper" />
+            <BoxView Color="#3b5998" Opacity="0.7" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Padding="30,20" Grid.Row="0">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://www.pngrepo.com/png/25685/170/plate-and-utensils-top-view.png" WidthRequest="80" HeightRequest="80" />
+                        <StackLayout Margin="0,10,0,0">
+                            <Label Text="Restaurantes" FontAttributes="Bold" />
+                            <Label Text="Visita los mejores restaurantes de Antigua :D"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://www.freepnglogos.com/uploads/coffee-logo-png/coffee-logo-vector-logo-elements-logo-objects-0.png" WidthRequest="80" HeightRequest="80" />
+                        <StackLayout Margin="0,10,0,0">
+                            <Label Text="Cafeterias" FontAttributes="Bold" />
+                            <Label Text="Toma un delicioso cafe en Antigua :D"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
